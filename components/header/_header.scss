@@ -1,0 +1,26 @@
+#header {
+  background-color: #ffae00;
+  margin-bottom: 30px;
+  padding: 0 4px;
+
+  h1 {
+    //text-align: center;
+    line-height: 45px;
+    color: wheat;
+  }
+
+  label {
+    line-height: 50px;
+    color: white;
+
+    span {
+      text-align: right;
+      padding-right: 15px;
+    }
+  }
+
+  select {
+    height: 42px;
+    margin: 5px 0 0 0;
+  }
+}

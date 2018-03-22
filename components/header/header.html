@@ -1,0 +1,12 @@
+<header id="header" class="grid-x">
+    <div class="cell small-3"></div>
+    <h1 class="h3 cell small-6">Under The Weather</h1>
+    <label class="cell small-3 grid-x">
+        <span class="cell small-6">Choose Gender</span>
+        <select id="baseSelector"
+                class="dropdown cell small-6"
+                ng-model="selectedBase"
+                ng-options="key as key for (key, value) in baseList"
+                ng-change="updateBase()"></select>
+    </label>
+</header>

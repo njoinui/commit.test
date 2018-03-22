@@ -1,0 +1,16 @@
+<articale ng-controller="ListCtrl">
+    <div class="weatherDisplay grid-x align-center grid-margin-y">
+        <h2 class="cell small-6 medium-6 large-6 h5">The Best:</h2>
+    </div>
+    <div class="weatherDisplay grid-x align-center grid-margin-y">
+        <location class="cell small-6 medium-6 large-6" locale="best" alt-template=""></location>
+    </div>
+    <div class="weatherDisplay grid-x align-center grid-margin-y">
+        <h2 class="cell small-6 medium-6 large-6 h5">The Rest:</h2>
+    </div>
+    <ul class="no-bullet">
+        <li class="weatherDisplay grid-x align-center grid-margin-y" ng-repeat="item in rest track by $index" >
+            <location locale="item" class="cell small-6 medium-6 large-6" alt-template="-condensed"></location>
+        </li>
+    </ul>
+</articale>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="underTheWeather">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under The Weather</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body ng-controller="InitCtrl" class="grid-container fluid">
+
+    <my-header></my-header>
+    <best-list></best-list>
+
+<!-- resources -->
+<script src="js/ramda.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/what-input.js"></script>
+<script src="js/foundation.js"></script>
+<script src="js/angular-1.5.9/angular.min.js"></script>
+<script src="js/angular-1.5.9/angular-resource.min.js"></script>
+
+<!-- foundation initialize  -->
+<script type="text/javascript">
+    ( function () {
+        $(document).foundation();
+    })();
+</script>
+
+<script src="app.js"></script>
+<script src="InitCtrl.js"></script>
+<!-- services -->
+<script src="services/BaseWeather.js"></script>
+<script src="services/ListRetriever.js"></script>
+<script src="services/List.js"></script>
+<script src="services/Sorter.js"></script>
+
+<!-- components -->
+<script src="components/header/header.js"></script>
+<script src="components/location/location.js"></script>
+<script src="components/bestList/ListCtrl.js"></script>
+<script src="components/bestList/bestList.js"></script>
+
+</body>
+</html>
